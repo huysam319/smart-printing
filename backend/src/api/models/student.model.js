@@ -35,4 +35,4 @@ const Student = db.define('Student',{
   }
 })
 
-module.exports = Student
+module.exports =  Student
