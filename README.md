@@ -1,1 +1,1 @@
-# smart-printing
+# Student Smart Printing System

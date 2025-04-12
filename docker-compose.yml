@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  api:
+    build: ./backend
+    restart: always
+    ports:
+      - "5050:5050"
+    environment:
+      - PORT=5050
+      - DATABASE_HOST=db
+      - DATABASE_PORT=3307
+      - DATABASE_PASSWORD=123456
+      - DATABASE_NAME=SSPS
+      - SECRETE_KEY=nguyendangkhoa04072004
+    volumes:
+      - ./backend:/app
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=SSPS
+    ports: 
+      - "3307:3307"
+    volumes:
+      - db_data:/var/lib/mysql
+volumes:
+  db_data:
