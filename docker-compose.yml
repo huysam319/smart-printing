@@ -1,5 +1,15 @@
 version: "3.8"
 services:
+  web:
+    build: ./frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
   api:
     build: ./backend
     restart: always
