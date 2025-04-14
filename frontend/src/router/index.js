@@ -1,12 +1,12 @@
 // import Home from "../pages/home/Home";
-// import LoginSV from "../pages/loginSV/Login";
+import LoginSV from "../pages/loginSV/Login";
 // import Profile from "../pages/profile/Profile";
 // import Printer from "../pages/printer/Printer";
 // import History from "../pages/history/History";
 // import PrinterInfo from "../pages/printerInfo/PrinterInfo";
 // import MainLayout from "../layouts/MainLayout/MainLayout";
 // import AdminLayout from "../layouts/AdminLayout/AdminLayout";
-// import LoginAdmin from "../pages/loginAdmin/Login";
+import LoginAdmin from "../pages/loginAdmin/Login";
 // import Printing from "../pages/printing/Printing";
 // import Dashboard from "../pages/dashboard/Dashboard";
 // import PrintingLogs from "../pages/printingLogs/PrintingLogs";
@@ -17,16 +17,16 @@
 // import AdminPrinterInfo from "../pages/adminPrinterInfo/AdminPrinterInfo";
 import LandingPage from "../pages/landPage/LandingPage"
 const routers = [
-//   {
-//     path: "/loginSV",
-//     component: LoginSV,
-//     layout: null,
-//   },
-//   {
-//     path: "/loginAdmin",
-//     component: LoginAdmin,
-//     layout: null,
-//   },
+  {
+    path: "/loginSV",
+    component: LoginSV,
+    layout: null,
+  },
+  {
+    path: "/loginAdmin",
+    component: LoginAdmin,
+    layout: null,
+  },
   {
     path: "/",
     component: LandingPage,

@@ -1,0 +1,120 @@
+.loginSV {
+    height: 100vh;
+    background-color: rgb(173, 216, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      width: 50%;
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      min-height: 600px;
+      overflow: hidden;
+  
+      .leftCard {
+        flex: 1;
+        background: linear-gradient(
+            to bottom,
+            rgba(70, 130, 180, 0.7),
+            rgba(173, 216, 230, 0.5)
+          ),
+          url(https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=600)
+            center;
+        background-size: cover;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+  
+        h1 {
+          font-size: 80px;
+        }
+      
+        span {
+          font-size: 16px;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: white;
+          color: #0a4d68;
+          font-weight: bolder;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+  
+        button:hover {
+          background-color: #0a4d68;
+          color: white;
+          transform: translateY(-3px);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+  
+        button:active {
+          transform: translateY(1px);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          background-color: #084c61;
+        }
+      }
+  
+      .rightCard {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+  
+        h1 {
+          color: #555;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+  
+          input {
+            border: none;
+            border-bottom: 1px solid lightgray;
+            padding: 20px 10px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          }
+  
+          input:hover {
+            border-bottom: 1px solid #0a4d68;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          }
+  
+          button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-color: #0a4d68;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+  
+          button:hover {
+            background-color: #0e6b8c;
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          }
+  
+          button:active {
+            background-color: #084c61;
+            transform: translateY(1px);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  
