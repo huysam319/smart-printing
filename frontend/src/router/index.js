@@ -13,7 +13,7 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import ManagePrinter from "../pages/managePrinter/ManagePrinter";
 import ManageStudent from "../pages/manageStudent/ManageStudent";
 // import PrintRequire from "../pages/printRequire/PrintRequire";
-// import AddPrinter from "../pages/addPrinter/AddPrinter";
+import AddPrinter from "../pages/addPrinter/AddPrinter";
 import AdminPrinterInfo from "../pages/adminPrinterInfo/AdminPrinterInfo";
 import LandingPage from "../pages/landPage/LandingPage"
 const routers = [
@@ -92,11 +92,11 @@ const adminRouters = [
 //     component: PrintingLogs,
 //     layout: AdminLayout,
 //   },
-//   {
-//     path: "/addPrinter",
-//     component: AddPrinter,
-//     layout: AdminLayout,
-//   },
+  {
+    path: "/addPrinter",
+    component: AddPrinter,
+    layout: AdminLayout,
+  },
   {
     path: "/admin-printerInfo/:id",
     component: AdminPrinterInfo,
