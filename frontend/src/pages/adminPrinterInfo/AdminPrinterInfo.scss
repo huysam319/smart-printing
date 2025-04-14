@@ -1,0 +1,196 @@
+.adminprinterInfo {
+    height: 100vh;
+    border: 1px solid lightgray;
+    background-color: #d9d9d9;
+  
+    .printerInfoHeader {
+      height: 100px;
+      background-color: #078cea;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  
+      .BKSmart {
+        padding: 30px;
+        color: white;
+        font-size: 40px;
+      }
+  
+      .returnIcon {
+        font-size: 50px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -25px;
+        left: 300px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+  
+        &:hover {
+          background-color: #f1f1f1;
+          transform: scale(1.1);
+        }
+  
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+  
+      h1 {
+        font-size: 40px;
+        position: relative;
+      }
+  
+      .printerReady {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 80px;
+        width: 280px;
+        border-radius: 20px;
+        gap: 30px;
+        padding: 20px;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        cursor: pointer;
+  
+        svg {
+          font-size: 50px;
+        }
+  
+        .printerName {
+          display: flex;
+          flex-direction: column;
+  
+          h1 {
+            font-size: 30px;
+            transition: color 0.3s;
+          }
+  
+          .printerStatus {
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+  
+            svg {
+              font-size: 20px;
+              color: green;
+              margin-right: 4px;
+              transition: color 0.3s;
+            }
+  
+            span {
+              font-size: 20px;
+              transition: color 0.3s;
+            }
+          }
+        }
+      }
+    }
+  
+    .printerInfoBody {
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  
+      .printerInfoCard {
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+  
+        .printerInfoCardHeader {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+  
+          svg {
+            font-size: 30px;
+            color: #078cea;
+            transition: color 0.3s ease;
+          }
+  
+          h1 {
+            font-size: 24px;
+            color: #078cea;
+            transition: color 0.3s ease;
+          }
+        }
+  
+        .printerInfoCardBody {
+          margin-top: 15px;
+          font-size: 16px;
+  
+          div {
+            margin-bottom: 10px;
+          }
+  
+          svg {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  
+    .logs-section {
+      margin-bottom: 30px;
+  
+      h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+        th,
+        td {
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+  
+        th {
+          background-color: #0078d7;
+          color: white;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+  
+        tr:hover {
+          background-color: #e9f1f9;
+        }
+      }
+    }
+  
+    .printing-logs-footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 20px 0;
+      background-color: #fff;
+      font-size: 14px;
+      color: #777;
+    }
+  }
+  

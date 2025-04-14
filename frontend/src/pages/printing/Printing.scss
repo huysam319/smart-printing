@@ -1,0 +1,194 @@
+.printing {
+    height: 100%;
+    border: 1px solid lightgray;
+    background-color: #d9d9d9;
+  
+    .printerInfoHeader {
+      height: 100px;
+      background-color: #078cea;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  
+      .BKSmart {
+        padding: 30px;
+        color: white;
+        font-size: 40px;
+      }
+  
+      .returnIcon {
+        font-size: 50px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -25px;
+        left: 300px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+  
+        &:hover {
+          background-color: #f1f1f1;
+          transform: scale(1.1);
+        }
+  
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+  
+      h1 {
+        font-size: 40px;
+        position: relative;
+      }
+  
+      .printerReady {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 80px;
+        width: 280px;
+        border-radius: 20px;
+        gap: 30px;
+        padding: 20px;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+        svg {
+          font-size: 50px;
+        }
+  
+        .printerName {
+          display: flex;
+          flex-direction: column;
+  
+          h1 {
+            font-size: 30px;
+          }
+  
+          .printerStatus {
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+  
+            svg {
+              font-size: 20px;
+              color: green;
+              margin-right: 4px;
+            }
+  
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-around; // Push items to the edges
+      align-items: flex-start; // Align items at the top
+      gap: 20px; // Add spacing between items
+      padding: 10px;
+      .preview {
+        flex: 1; // Allow .preview to take all available space
+        max-width: 1000px;
+        height: auto;
+        margin: 30px 0; // Vertical margin only
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+      }
+      .printing-service {
+        flex: 0.5;
+        max-width: 600px;
+        margin: 30px 0; // Vertical margin only
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+      }
+    }
+    section {
+      margin-bottom: 30px;
+    }
+  
+    section h2 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    input,
+    select,
+    button {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  
+    input[type="file"] {
+      border: none;
+    }
+  
+    .hint {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  
+    .setting {
+      margin-bottom: 15px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #0078d7;
+      color: white;
+      font-size: 14px;
+      transition: background-color 0.3s, transform 0.1s ease;
+    }
+  
+    button:hover {
+      background-color: #005fa3;
+    }
+  
+    button:active {
+      transform: scale(0.95);
+      background-color: #004a7a;
+    }
+  
+    footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  
+    footer button {
+      flex: 1;
+      margin: 0 5px;
+    }
+  
+    .preview-btn {
+      margin-top: 10px;
+    }
+  }
+  

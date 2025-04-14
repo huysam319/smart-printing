@@ -1,0 +1,220 @@
+.landing-page {
+    font-family: "Arial", sans-serif;
+    color: #2e3b4e; // Dark slate for primary text
+  
+    // Header styles
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #00274d; // Deep navy
+  
+      .logo-container {
+        display: flex;
+        align-items: center;
+  
+        .logo {
+          height: 50px;
+          margin-right: 10px;
+        }
+  
+        .site-title {
+          font-size: 24px;
+          font-weight: bold;
+          color: #f9f9f9; // Off-white text
+        }
+      }
+  
+      .login-button,
+      .cta-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 20px;
+        background-color: #0077cc;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.1s, box-shadow 0.1s;
+  
+        &:hover {
+          background-color: #005fa3; 
+        }
+  
+        &:active {
+          background-color: #004a82; 
+          transform: scale(0.95); 
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+      }
+    }
+  
+    // Hero section styles
+    .hero-section {
+      position: relative;
+  
+      .hero-image {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+      }
+  
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #f9f9f9; // Off-white for readability
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  
+        h1 {
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+  
+        .cta-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #0077cc; // Sky blue
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #005fa3; // Darker blue
+          }
+        }
+      }
+    }
+  
+    // Services section styles
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px;
+      background-color: #e6f7ff; // Light sky blue
+      gap: 20px;
+  
+      .service-card {
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: 300px;
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+  
+        .service-icon {
+          font-size: 40px;
+          color: #0077cc; // Sky blue accent
+          margin-bottom: 10px;
+        }
+  
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #2e3b4e; // Dark slate for headings
+        }
+  
+        p {
+          font-size: 16px;
+          color: #555555;
+          line-height: 1.5;
+        }
+      }
+    }
+  
+    // Footer styles
+    .footer {
+      padding: 20px;
+      background-color: #00274d; // Deep navy
+      color: #f9f9f9; // Off-white text
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      .footer-links {
+        a {
+          margin-right: 20px;
+          color: #f9f9f9; // White links
+          text-decoration: none;
+          font-size: 16px;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .footer-contact {
+        p {
+          margin: 5px 0;
+          font-size: 16px;
+        }
+      }
+    }
+  
+    // Responsive styles
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+  
+        .logo-container {
+          margin-bottom: 10px;
+        }
+      }
+  
+      .hero-section {
+        .hero-text {
+          h2 {
+            font-size: 24px;
+          }
+  
+          .cta-button {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+        }
+      }
+  
+      .services-section {
+        flex-direction: column;
+        align-items: center;
+  
+        .service-card {
+          flex: 1 1 100%;
+          max-width: 90%;
+        }
+      }
+  
+      .footer {
+        text-align: center;
+  
+        .footer-links {
+          margin-bottom: 10px;
+  
+          a {
+            display: inline-block;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  

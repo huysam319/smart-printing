@@ -1,0 +1,94 @@
+.print-require-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+  
+    .header {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-start;
+  
+      .return-dashboard-btn {
+        padding: 10px 20px;
+        background-color: #0078d7;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+  
+        &:hover {
+          background-color: #005fa3;
+        }
+  
+        &:active {
+          transform: scale(0.95);
+          background-color: #004482;
+        }
+      }
+    }
+  
+    .table-container {
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+  
+      .print-requests-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+        th,
+        td {
+          padding: 12px;
+          text-align: center;
+          border: 1px solid #ddd;
+        }
+  
+        th {
+          background-color: #0078d7;
+          color: white;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+  
+        tr:hover {
+          background-color: #e9f1f9;
+        }
+  
+        .confirm-btn {
+          padding: 6px 12px;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 12px;
+          transition: background-color 0.3s ease, transform 0.1s ease;
+  
+          &:hover {
+            background-color: #388e3c;
+          }
+  
+          &:active {
+            transform: scale(0.95);
+            background-color: #2c6d31;
+          }
+        }
+      }
+    }
+  }
+  

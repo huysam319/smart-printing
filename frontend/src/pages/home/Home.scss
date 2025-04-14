@@ -1,0 +1,156 @@
+.home {
+    height: 100vh;
+    border: 1px solid lightgray;
+    background-color: #d9d9d9;
+  
+    .homeHeader {
+      height: 120px;
+      background-color: #078cea;
+      position: relative; /* Allow absolute positioning for children */
+  
+      h1 {
+        font-size: 44px;
+        color: white;
+        position: absolute;
+        padding: 30px;
+      }
+  
+      .homeUser {
+        width: 800px;
+        height: 80px;
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        position: absolute; /* Position relative to .homeHeader */
+        bottom: -50px; /* Offset to make it appear partially outside the header */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Align center horizontally */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+        .homeUserInfo {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+  
+          img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+          }
+          span {
+            font-size: 24px;
+          }
+        }
+  
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  
+    .homePrinter {
+      width: 80%;
+      margin: 80px auto; /* Center horizontally with margin from the top */
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+  
+      .homePrinterInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+  
+        .homePrinterInfoLogo {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+  
+          span {
+            font-size: 24px;
+          }
+        }
+        span {
+          font-size: 24px;
+        }
+      }
+  
+      hr {
+        margin: 10px 0;
+      }
+  
+      .homePrinterStatus {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+  
+        .homePrinterStatusIcon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+  
+          .homePrinterStatusIconProfile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+  
+            &:hover {
+              transform: scale(1.05);
+              background-color: #e0f4ff;
+              cursor: pointer;
+            }
+  
+            &:active {
+              transform: scale(0.95);
+            }
+          }
+  
+          svg {
+            font-size: 30px;
+            color: #078cea;
+          }
+  
+          span {
+            font-size: 16px;
+            color: #555;
+          }
+        }
+  
+        .homeStatus {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+  
+          .homeStatusIcon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+  
+            svg {
+              font-size: 16px;
+              color: green;
+            }
+  
+            span {
+              font-size: 16px;
+              color: #555;
+            }
+          }
+        }
+      }
+    }
+  }
+  

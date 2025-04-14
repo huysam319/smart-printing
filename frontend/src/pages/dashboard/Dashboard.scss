@@ -1,0 +1,124 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f7f7f7;
+  
+    .dashboard-header {
+      text-align: center;
+      margin-bottom: 20px;
+  
+      h1 {
+        font-size: 36px;
+        color: #333;
+      }
+    }
+  
+    .dashboard-summary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      gap: 20px;
+  
+      .summary-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 30%;
+  
+        h2 {
+          font-size: 18px;
+          color: #555;
+        }
+  
+        p {
+          font-size: 24px;
+          color: #333;
+          font-weight: bold;
+        }
+      }
+  
+      .summary-item-button {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 30%;
+        cursor: pointer;
+  
+        h2 {
+          font-size: 18px;
+          color: #555;
+        }
+  
+        p {
+          font-size: 24px;
+          color: #333;
+          font-weight: bold;
+        }
+  
+        &:hover {
+          background-color: #f0f0f0;
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+  
+        &:active {
+          background-color: #e0e0e0;
+          transform: scale(0.98);
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  
+    .dashboard-actions {
+      margin-bottom: 30px;
+  
+      h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+  
+      .actions-container {
+        display: flex;
+        justify-content: space-around; /* Spaced evenly */
+        gap: 15px;
+  
+        button {
+          flex: 1; /* Make buttons take equal space */
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          background-color: #0078d7;
+          color: white;
+          font-size: 14px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #005fa3;
+          }
+  
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+  
+    .dashboard-footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 20px 0;
+      background-color: #fff;
+      font-size: 14px;
+      color: #777;
+    }
+  }
+  

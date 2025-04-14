@@ -1,0 +1,147 @@
+.printer-management-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f7f7f7;
+  
+    .printer-management-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      h1 {
+        font-size: 36px;
+        color: #333;
+      }
+  
+      .actions {
+        display: flex;
+        gap: 10px;
+  
+        .add-printer-btn,
+        .return-to-dashboard-btn,
+        .configure-file-types-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.1s ease;
+  
+          &:active {
+            transform: scale(0.95); /* Shrink button slightly on click */
+          }
+        }
+  
+        .add-printer-btn {
+          background-color: #0078d7;
+          color: white;
+  
+          &:hover {
+            background-color: #005fa3;
+          }
+  
+          &:active {
+            background-color: #004a85;
+          }
+        }
+  
+        .return-to-dashboard-btn {
+          background-color: #f44336; /* Red background */
+          color: white;
+  
+          &:hover {
+            background-color: #d32f2f;
+          }
+  
+          &:active {
+            background-color: #b71c1c;
+          }
+        }
+  
+        .configure-file-types-btn {
+          background-color: #4caf50; /* Green background */
+          color: white;
+  
+          &:hover {
+            background-color: #388e3c;
+          }
+  
+          &:active {
+            background-color: #2e7d32;
+          }
+        }
+      }
+    }
+  
+    .printer-list {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+        th,
+        td {
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+  
+        th {
+          background-color: #0078d7;
+          color: white;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+  
+        tr:hover {
+          background-color: #e9f1f9;
+        }
+  
+        .status-btn,
+        .info-btn {
+          padding: 5px 10px;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 12px;
+          transition: background-color 0.3s ease, transform 0.1s ease;
+  
+          &:active {
+            transform: scale(0.95); /* Shrink button slightly on click */
+          }
+        }
+  
+        .status-btn {
+          background-color: #ff6600; /* Orange background */
+  
+          &:hover {
+            background-color: #cc5200;
+          }
+  
+          &:active {
+            background-color: #b34700;
+          }
+        }
+  
+        .info-btn {
+          background-color: #007bff; /* Blue background */
+          margin-left: 5px;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+  
+          &:active {
+            background-color: #004085;
+          }
+        }
+      }
+    }
+  }
+  
