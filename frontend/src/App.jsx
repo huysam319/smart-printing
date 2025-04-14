@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { routers, studentRouters , adminRouters} from "./router";
-import { routers } from "./router";
-// import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+// import { routers, studentRouters, adminRouters} from "./router";
+import { routers, studentRouters } from "./router";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import React from "react";
 import { useState } from "react";
 function App() {
@@ -23,7 +23,7 @@ function App() {
             />
           );
         })}
-        {/* {studentRouters.map((route, index) => {
+        {studentRouters.map((route, index) => {
           const Page = route.component;
           const Layout = route.layout || React.Fragment;
           return (
@@ -40,7 +40,7 @@ function App() {
             />
           );
         })}
-        {adminRouters.map((route, index) => {
+        {/* {adminRouters.map((route, index) => {
           const Page = route.component;
           const Layout = route.layout || React.Fragment;
           return (

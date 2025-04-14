@@ -1,10 +1,10 @@
-// import Home from "../pages/home/Home";
+import Home from "../pages/home/Home";
 import LoginSV from "../pages/loginSV/Login";
 // import Profile from "../pages/profile/Profile";
 // import Printer from "../pages/printer/Printer";
 // import History from "../pages/history/History";
 // import PrinterInfo from "../pages/printerInfo/PrinterInfo";
-// import MainLayout from "../layouts/MainLayout/MainLayout";
+import MainLayout from "../layouts/MainLayout/MainLayout.jsx";
 // import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import LoginAdmin from "../pages/loginAdmin/Login";
 // import Printing from "../pages/printing/Printing";
@@ -33,12 +33,12 @@ const routers = [
     layout: null,
   },
 ];
-// const studentRouters = [
-//   {
-//     path: "/home",
-//     component: Home,
-//     layout: MainLayout,
-//   },
+const studentRouters = [
+  {
+    path: "/home",
+    component: Home,
+    layout: MainLayout,
+  },
 //   {
 //     path: "/profile",
 //     component: Profile,
@@ -64,7 +64,7 @@ const routers = [
 //     component: Printing,
 //     layout: MainLayout,
 //   },
-// ];
+];
 
 // const adminRouters = [
 //   {
@@ -103,4 +103,4 @@ const routers = [
 //     layout: AdminLayout,
 //   },
 // ];
-export { routers };//, studentRouters, adminRouters };
+export { routers, studentRouters };//, adminRouters };
