@@ -5,10 +5,10 @@ import LoginSV from "../pages/loginSV/Login";
 // import History from "../pages/history/History";
 // import PrinterInfo from "../pages/printerInfo/PrinterInfo";
 import MainLayout from "../layouts/MainLayout/MainLayout.jsx";
-// import AdminLayout from "../layouts/AdminLayout/AdminLayout";
+import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import LoginAdmin from "../pages/loginAdmin/Login";
 // import Printing from "../pages/printing/Printing";
-// import Dashboard from "../pages/dashboard/Dashboard";
+import Dashboard from "../pages/dashboard/Dashboard";
 // import PrintingLogs from "../pages/printingLogs/PrintingLogs";
 // import ManagePrinter from "../pages/managePrinter/ManagePrinter";
 // import ManageStudent from "../pages/manageStudent/ManageStudent";
@@ -66,12 +66,12 @@ const studentRouters = [
 //   },
 ];
 
-// const adminRouters = [
-//   {
-//     path: "/dashboard",
-//     component: Dashboard,
-//     layout: AdminLayout,
-//   },
+const adminRouters = [
+  {
+    path: "/dashboard",
+    component: Dashboard,
+    layout: AdminLayout,
+  },
 //   {
 //     path: "/printer-management",
 //     component: ManagePrinter,
@@ -102,5 +102,5 @@ const studentRouters = [
 //     component: AdminPrinterInfo,
 //     layout: AdminLayout,
 //   },
-// ];
-export { routers, studentRouters };//, adminRouters };
+];
+export { routers, studentRouters, adminRouters };
