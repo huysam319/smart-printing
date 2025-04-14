@@ -1,0 +1,60 @@
+.my-account {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 40px;
+      text-align: center; /* Center the main title */
+    }
+  
+    .table-container {
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+  
+      h2 {
+        background-color: #078cea;
+        color: white;
+        padding: 15px 20px;
+        font-size: 20px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between icon and text */
+      }
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+  
+        tbody {
+          tr {
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+  
+            &:hover {
+              background-color: #eef6fd; /* Light blue hover effect */
+            }
+  
+            td {
+              padding: 15px;
+              font-size: 18px;
+              color: #555;
+              border: 1px solid #ddd;
+  
+              div {
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
